@@ -1,9 +1,5 @@
 {
   "name": "codon-demo",
-  "np": {
-    "tests": false,
-    "yarn": false
-  },
   "version": "1.0.3",
   "description": "codon demo",
   "main": "dist/myButton.js",
@@ -12,6 +8,9 @@
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open --mode development",
     "np": "np"
+  },
+  "np": {
+    "tests": false
   },
   "repository": {
     "type": "git",
@@ -30,6 +29,7 @@
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "node-loader": "^1.0.2",
+    "np": "^7.0.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
