@@ -10,7 +10,10 @@
     "np": "np"
   },
   "np": {
-    "tests": false
+    "tests": false,
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org"
+    }
   },
   "repository": {
     "type": "git",
