@@ -1,11 +1,12 @@
 {
   "name": "codon-demo",
+  "np": {
+    "tests": false,
+    "yarn": false
+  },
   "version": "1.0.3",
   "description": "codon demo",
   "main": "dist/myButton.js",
-  "np": {
-    "tests": false
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
