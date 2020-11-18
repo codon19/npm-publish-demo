@@ -2,9 +2,11 @@
   "name": "codon-demo",
   "version": "1.0.1",
   "description": "codon demo",
-  "main": "index.js",
+  "main": "dist/myButton.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,25 @@
   "bugs": {
     "url": "https://github.com/codon19/npm-publish-demo/issues"
   },
-  "homepage": "https://github.com/codon19/npm-publish-demo#readme"
+  "homepage": "https://github.com/codon19/npm-publish-demo#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.2.1",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "node-loader": "^1.0.2",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.9.5",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
