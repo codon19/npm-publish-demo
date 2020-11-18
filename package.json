@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open --mode development",
-    "np-no-tests": "np --no-tests"
+    "np": "np"
+  },
+  "np": {
+    "tests": false
   },
   "repository": {
     "type": "git",
