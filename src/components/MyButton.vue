@@ -1,5 +1,8 @@
 <template>
-  <el-button size="small" type="primary" @click="handleClickBtn">{{ text }}</el-button>
+  <div>
+    <el-button size="small" type="primary" @click="handleClickAdd">新增</el-button>
+    <el-button size="small" type="primary" @click="handleClickBtn">{{ text }}</el-button>
+  </div>
 </template>
 
 <script>
@@ -8,8 +11,12 @@
     props: {
       text: String
     },
-    methods() {
+    methods: {
+      handleClickAdd() {
+        console.log('handleClickAdd')
+      },
       handleClickBtn() {
+        console.log('handleClickBtn')
         this.$store.dispatch(('user/getInfo'))
       }
     }
