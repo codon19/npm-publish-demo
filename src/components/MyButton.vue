@@ -1,5 +1,5 @@
 <template>
-  <el-button size="small" type="primary">{{ text }}</el-button>
+  <el-button size="small" type="primary" @click="handleClickBtn">{{ text }}</el-button>
 </template>
 
 <script>
@@ -7,6 +7,11 @@
     name: 'MyButton',
     props: {
       text: String
+    },
+    methods() {
+      handleClickBtn() {
+        this.$store.dispatch(('user/getInfo'))
+      }
     }
   }
 </script>
