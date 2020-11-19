@@ -1,7 +1,20 @@
-import MyButton from './components/MyButton.vue';
+import GuButton from '../packages/button/index.js'
 
-MyButton.install = function (Vue) {
-  Vue.component(MyButton.name, MyButton);
+const components =[
+  GuButton
+];
+
+const install = function(Vue) {
+  components.forEach(component => {
+    Vue.component(component.name, component);
+  });
 };
 
-export default MyButton;
+/* istanbul ignore if */
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+export default {
+  GuButton
+}

@@ -6,21 +6,21 @@
 </template>
 
 <script>
-  export default {
-    name: 'MyButton',
-    props: {
-      text: String
+export default {
+  name: 'MyButton',
+  props: {
+    text: String
+  },
+  methods: {
+    handleClickAdd() {
+      console.log('handleClickAdd')
     },
-    methods: {
-      handleClickAdd() {
-        console.log('handleClickAdd')
-      },
-      handleClickBtn() {
-        console.log('handleClickBtn')
-        this.$store.dispatch(('user/getInfo'))
-      }
+    handleClickBtn() {
+      console.log('handleClickBtn')
+      this.$store.dispatch(('user/getInfo'))
     }
   }
+}
 </script>
 
 <style lang="scss"></style>
