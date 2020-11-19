@@ -1,7 +1,7 @@
-import MyButton from './src/main.vue';
+import GuButton from './src/main.vue';
 
-MyButton.install = function (Vue) {
-  Vue.component(MyButton.name, MyButton);
+GuButton.install = function (Vue) {
+  Vue.component(GuButton.name, GuButton);
 };
 
-export default MyButton;
+export default GuButton;
