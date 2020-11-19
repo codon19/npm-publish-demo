@@ -1,6 +1,6 @@
 {
   "name": "codon-demo",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "codon demo",
   "main": "dist/myButton.js",
   "scripts": {
